@@ -2,7 +2,7 @@ import React from 'react';
 import { CheckCircle2, Star, BarChart2 } from 'lucide-react';
 import boyImg from '../assets/boy.png';
 import girlImg from '../assets/girl.png';
-import course1Img from '../assets/course_1.png';
+import card1Img from '../assets/card1.png';
 
 export default function ValueProposition() {
   return (
@@ -62,14 +62,10 @@ export default function ValueProposition() {
               <div className="absolute top-2 left-0 sm:left-2 w-[240px] sm:w-[260px] bg-white rounded-3xl p-3.5 shadow-xl border border-slate-100 -rotate-2 z-0">
                 <div className="relative w-full h-28 rounded-2xl overflow-hidden bg-slate-100">
                   <img
-                    src={course1Img}
+                    src={card1Img}
                     alt="Learn Figma from Basic"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-[10px] text-white">
-                    <span className="bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-full">17 Lessons</span>
-                    <span className="bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-full">2 hours 16 mins</span>
-                  </div>
                 </div>
                 <div className="mt-3">
                   <div className="text-sm font-bold text-slate-900 leading-snug">

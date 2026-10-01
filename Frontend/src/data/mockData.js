@@ -1,3 +1,13 @@
+import card1 from '../assets/card1.png';
+import card2 from '../assets/card2.png';
+import card3 from '../assets/card3.png';
+import card4 from '../assets/card4.png';
+import card5 from '../assets/card5.png';
+import card6 from '../assets/card6.png';
+import people1 from '../assets/people1.png';
+import people2 from '../assets/people2.png';
+import people3 from '../assets/people3.png';
+
 export const CATEGORIES = [
   'Featured',
   'Music',
@@ -34,7 +44,7 @@ export const COURSES = [
     comments: '59 Comments',
     category: 'UI/UX Design',
     isFeatured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=700&q=80',
+    thumbnail: card1,
     enrolledCount: '26+'
   },
   {
@@ -50,7 +60,7 @@ export const COURSES = [
     comments: '59 Comments',
     category: 'Graphic Design',
     isFeatured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80',
+    thumbnail: card2,
     enrolledCount: '26+'
   },
   {
@@ -66,7 +76,7 @@ export const COURSES = [
     comments: '59 Comments',
     category: 'Data Science',
     isFeatured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80',
+    thumbnail: card3,
     enrolledCount: '26+'
   },
   {
@@ -82,7 +92,7 @@ export const COURSES = [
     comments: '59 Comments',
     category: 'Productivity',
     isFeatured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80',
+    thumbnail: card4,
     enrolledCount: '26+'
   },
   {
@@ -98,7 +108,7 @@ export const COURSES = [
     comments: '59 Comments',
     category: 'Freelance & Entrepreneurship',
     isFeatured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=700&q=80',
+    thumbnail: card5,
     enrolledCount: '26+'
   },
   {
@@ -114,7 +124,7 @@ export const COURSES = [
     comments: '59 Comments',
     category: 'Marketing',
     isFeatured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80',
+    thumbnail: card6,
     enrolledCount: '26+'
   }
 ];
@@ -133,21 +143,21 @@ export const TESTIMONIALS = [
     id: 1,
     name: 'Sarah M.',
     role: 'Enthusiastic Learner',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    avatar: people1,
     content: '"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."'
   },
   {
     id: 2,
     name: 'James L.',
     role: 'Lifelong Learner',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    avatar: people2,
     content: '"I\'ve tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."'
   },
   {
     id: 3,
     name: 'Alex B.',
     role: 'Inspired Creator',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+    avatar: people3,
     content: '"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It\'s fulfilling to see my courses making a positive impact on learners globally."'
   }
 ];

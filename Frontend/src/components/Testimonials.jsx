@@ -1,5 +1,14 @@
 import React from 'react';
 import { TESTIMONIALS } from '../data/mockData';
+import people1 from '../assets/people1.png';
+import people2 from '../assets/people2.png';
+import people3 from '../assets/people3.png';
+
+const peopleMap = {
+  1: people1,
+  2: people2,
+  3: people3,
+};
 
 export default function Testimonials() {
   return (
@@ -27,35 +36,39 @@ export default function Testimonials() {
 
         {/* Testimonials Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          {TESTIMONIALS.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-            >
-              {/* Review Text */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3.5">
+          {TESTIMONIALS.map((testimonial) => {
+            const avatarImg = peopleMap[testimonial.id] || testimonial.avatar;
+            return (
+              <div
+                key={testimonial.id}
+                className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-start text-left"
+              >
+                {/* Avatar at Top */}
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden bg-slate-100 mb-5 shrink-0 ring-2 ring-slate-100 shadow-sm">
                   <img
-                    src={testimonial.avatar}
+                    src={avatarImg}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover ring-2 ring-slate-100"
+                    className="w-full h-full object-cover"
                   />
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900">
-                      {testimonial.name}
-                    </h3>
-                    <p className="text-xs font-semibold text-[#1355FF]">
-                      {testimonial.role}
-                    </p>
-                  </div>
                 </div>
 
-                <p className="text-sm text-slate-600 leading-relaxed pt-2">
+                {/* Author & Role */}
+                <div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm font-semibold text-[#1355FF] mt-1">
+                    {testimonial.role}
+                  </p>
+                </div>
+
+                {/* Quote Content */}
+                <p className="text-sm text-slate-600 leading-relaxed mt-4 font-normal">
                   {testimonial.content}
                 </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

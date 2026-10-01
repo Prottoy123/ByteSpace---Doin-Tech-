@@ -51,25 +51,12 @@ export default function FeaturedCourses() {
               className="group bg-white rounded-3xl p-4 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(19,85,255,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
             >
               {/* Thumbnail Container */}
-              <div className="relative w-full h-48 sm:h-52 rounded-2xl overflow-hidden bg-slate-100">
+              <div className="relative w-full rounded-2xl overflow-hidden bg-slate-100 aspect-[16/10]">
                 <img
                   src={course.thumbnail}
                   alt={course.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                
-                {/* Overlay Metadata Pills */}
-                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-1 text-[11px] font-medium text-white">
-                  <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1">
-                    {course.lessons}
-                  </span>
-                  <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1">
-                    {course.duration}
-                  </span>
-                  <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1">
-                    {course.comments}
-                  </span>
-                </div>
               </div>
 
               {/* Course Info */}
