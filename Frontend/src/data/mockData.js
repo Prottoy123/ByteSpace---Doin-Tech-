@@ -1,3 +1,13 @@
+import card1 from '../assets/card1.png';
+import card2 from '../assets/card2.png';
+import card3 from '../assets/card3.png';
+import card4 from '../assets/card4.png';
+import card5 from '../assets/card5.png';
+import card6 from '../assets/card6.png';
+import people1 from '../assets/people1.png';
+import people2 from '../assets/people2.png';
+import people3 from '../assets/people3.png';
+
 export const CATEGORIES = [
   'Featured',
   'Music',
@@ -19,13 +29,6 @@ export const CATEGORIES = [
   'Cooking',
   '+ More'
 ];
-
-import card1 from '../assets/card1.png';
-import card2 from '../assets/card2.png';
-import card3 from '../assets/card3.png';
-import card4 from '../assets/card4.png';
-import card5 from '../assets/card5.png';
-import card6 from '../assets/card6.png';
 
 export const COURSES = [
   {
@@ -134,10 +137,6 @@ export const LEARNING_PATHS = [
   { id: 'marketing', name: 'Marketing', icon: 'Megaphone', color: '#CCFF00' },
   { id: 'photo', name: 'Photography', icon: 'Camera', color: '#CCFF00' }
 ];
-
-import people1 from '../assets/people1.png';
-import people2 from '../assets/people2.png';
-import people3 from '../assets/people3.png';
 
 export const TESTIMONIALS = [
   {
